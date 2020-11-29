@@ -49,6 +49,8 @@ class Swarm:
         
     def _find_star_neighborhood_min(self, generation):
         # return min(self.particles, key=lambda x: x.best_fitness[generation])
+        if len(self.best_neighbor) == generation:
+            self.best_neighbor.append(min(self.particles, key=lambda x: x.best_fitness[generation]))
         return self.best_neighbor[generation]
         
     def increase_evaluation_count(self, particle, generation):
@@ -62,10 +64,10 @@ class Swarm:
             self.best[generation] = particle.x[generation]
             self.best_fitness[generation] = particle.fitness[generation]
         
-        if len(self.best_neighbor) == generation:
-            self.best_neighbor.append(None)
-            self.best_neighbor_fitness.append(np.inf)
+        # if len(self.best_neighbor) == generation:
+        #     self.best_neighbor.append(None)
+        #     self.best_neighbor_fitness.append(np.inf)
             
-        if particle.best_fitness[generation] < self.best_neighbor_fitness[generation]:
-            self.best_neighbor[generation] = particle
-            self.best_neighbor_fitness[generation] = particle.best_fitness[generation]
+        # if particle.best_fitness[generation] < self.best_neighbor_fitness[generation]:
+        #     self.best_neighbor[generation] = particle
+        #     self.best_neighbor_fitness[generation] = particle.best_fitness[generation]
