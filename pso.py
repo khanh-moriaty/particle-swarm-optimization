@@ -72,7 +72,7 @@ if __name__ == '__main__':
         
     seed = 19520624
         
-    pso = PSO(num_var=2, population_size=32, max_generation=50, function='rastrigin', topology='ring', seed=seed)
+    pso = PSO(num_var=2, population_size=32, max_generation=50, function='rastrigin', topology='star', seed=seed)
     
     best, fitness = pso.optimize()
     pso.print_log()
