@@ -57,6 +57,17 @@ class Particle:
         self.update_fitness(generation)
         # print(self.v[generation], self.x[generation], self.best[generation])
         
+        
+        # Free up memory for large problems
+        if len(self.x) > 2 and len(self.x[-1]) > 2:
+            self.inertia[-2] = None
+            self.cognitive[-2] = None
+            self.social[-2] = None
+            self.v[-2] = None
+            self.x[-2] = None
+            self.best[-2] = None
+            self.best_fitness[-2] = None
+        
         return inertia, cognitive, social
         
         
