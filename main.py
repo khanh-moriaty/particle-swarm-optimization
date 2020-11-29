@@ -27,7 +27,7 @@ def _task2(F, T, N):
     
     for i in range(10):
         t = time.time()
-        pso = PSO(num_var=10, population_size=N, max_generation=10**9+7, function=F, topology=T, seed=19520624)
+        pso = PSO(num_var=10, population_size=N, max_generation=10**9+7, function=F, topology=T, seed=19520624+i)
         fitness = pso.optimize()[1]
         a[i] = fitness
         pso.print_log()
