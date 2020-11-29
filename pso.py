@@ -2,6 +2,7 @@ from src import Swarm
 from functions import FunctionFactory
 
 import numpy as np
+import os
 
 class PSO:
     
@@ -33,6 +34,8 @@ class PSO:
         population_size = self.population_size
         seed = self.seed
         swarm = self.swarm
+        
+        os.makedirs('logs', exist_ok=True)
         
         def pprint(a):
             return ' '.join(map('{:.6f}'.format, a.astype(float)))

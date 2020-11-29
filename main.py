@@ -44,7 +44,7 @@ def task2():
     print('task2:')
     total_time = time.time()
     
-    with Pool(10) as pool:
+    with Pool(5) as pool:
         res = pool.starmap(_task2, itertools.product(functions, topologies, population_sizes))
         
     res.sort(key=lambda x: x[0])
