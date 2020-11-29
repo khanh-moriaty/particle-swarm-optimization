@@ -2,7 +2,6 @@ from pso import PSO
 import itertools
 import time
 import numpy as np
-import gc
 from multiprocessing import Pool
 
 def task1():
@@ -31,8 +30,6 @@ def _task2(F, T, N):
         pso = PSO(num_var=10, population_size=N, max_generation=10**9+7, function=F, topology=T, seed=19520624+i)
         fitness = pso.optimize()[1]
         pso.print_log()
-        del pso
-        gc.collect()
         a[i] = fitness
         print('\t', i, F, T, N, 'time: ', time.time() - t)
         
