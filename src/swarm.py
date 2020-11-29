@@ -30,9 +30,9 @@ class Swarm:
             particle.update(self.generation)
             
         # Free up memory for large problems
-        # if len(self.best) > 2 and len(self.best[-1]) > 2:
-        #     self.best[self.generation-2] = None
-        #     self.best_fitness[self.generation-2] = None
+        if len(self.best) > 2 and len(self.best[-1]) > 2:
+            self.best[self.generation-2] = None
+            self.best_fitness[self.generation-2] = None
             
     def find_neighborhood_min(self, particle_id, generation):
         if self.topology == 'ring':
