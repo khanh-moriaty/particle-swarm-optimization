@@ -32,11 +32,11 @@ def _task2(F, T, N):
         fitness = pso.optimize()[1]
         pso.print_log()
         del pso
-        print('collected: ', gc.collect())
+        gc.collect()
         a[i] = fitness
         print('\t', i, F, T, N, 'time: ', time.time() - t)
         
-    return (F, N, T), np.mean(a), np.std(a)
+    return (F, T, N), np.mean(a), np.std(a)
     
 def task2():
     
@@ -53,8 +53,8 @@ def task2():
     res.sort(key=lambda x: x[0])
         
     with open('logs/task2.txt', 'w') as fo:
-        for (F, N, T), mean, std in res:
-            fo.write("{} {} {}: {} ({})\n".format(F, N, T, mean, std))
+        for (F, T, N), mean, std in res:
+            fo.write("{} {} {}: {} ({})\n".format(F, T, N, mean, std))
         
     
     print('Total time: ', time.time() - total_time)
