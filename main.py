@@ -61,4 +61,4 @@ def task2():
     
 if __name__ == '__main__':
     task1()
-    # task2()
+    task2()
