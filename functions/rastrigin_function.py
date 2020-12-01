@@ -10,7 +10,7 @@ class RastriginFunction(Function):
     
     def _function(self, x):
         A=10
-        return A*self.num_var + np.sum(np.square(x) - A * np.cos(2*math.pi * x))
+        return A*self.num_var + np.sum(np.square(x) - A * np.cos(2*math.pi * x), axis=0)
     
     @property
     def _lower_bound(self):

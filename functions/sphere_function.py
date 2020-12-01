@@ -8,7 +8,7 @@ class SphereFunction(Function):
         super().__init__(num_var)
     
     def _function(self, x):
-        return np.sum(np.square(x))
+        return np.sum(np.square(x), axis=0)
     
     @property
     def _lower_bound(self):

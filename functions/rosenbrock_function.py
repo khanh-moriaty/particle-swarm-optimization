@@ -12,7 +12,7 @@ class RosenbrockFunction(Function):
         A=100
         x_0 = x[:-1]
         x_1 = x[1:]
-        return np.sum(A*np.square(x_1 - np.square(x_0)) + np.square(1 - x_0))
+        return np.sum(A*np.square(x_1 - np.square(x_0)) + np.square(1 - x_0), axis=0)
     
     @property
     def _lower_bound(self):

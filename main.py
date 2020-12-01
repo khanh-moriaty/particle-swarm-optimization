@@ -47,7 +47,7 @@ def task2():
     print('task2:')
     total_time = time.time()
     
-    with Pool(5) as pool:
+    with Pool(8) as pool:
         res = pool.starmap(_task2, itertools.product(functions, topologies, population_sizes))
         
     res.sort(key=lambda x: x[0])
@@ -64,4 +64,4 @@ def task2():
     
 if __name__ == '__main__':
     task1()
-    task2()
+    # task2()

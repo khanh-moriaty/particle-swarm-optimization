@@ -8,7 +8,7 @@ class Function:
         self.num_var = num_var
         
     def __call__(self, x):
-        return self._function(x)
+        return self._function(self.clip_particle(x))
     
     def generate_particle(self):
         return np.random.uniform(self._lower_bound, self._upper_bound, (self.num_var, ))
@@ -29,7 +29,7 @@ class Function:
     
     @property
     def _optimal(self):
-        return 0
+        return np.zeros((self.num_var,))
     
     @property
     def _optimal_value(self):

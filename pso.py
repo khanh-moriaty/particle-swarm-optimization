@@ -50,26 +50,23 @@ class PSO:
             fo.write("Optimal fitness value: {:.6f}\n".format(swarm.f._optimal_value))
             fo.write("Absolute different: {:.6f}\n".format(abs(swarm.f._optimal_value - swarm.best_fitness[-1])))
             
-            if num_var == 2:
-                fo.write("\n\n")
-                fo.write("*" * 40 + "\n")
-                fo.write("JOURNEY OF THE BEST PARTICLE\n")
-                fo.write("*" * 40 + "\n")
-                fo.write("\n\n")
-                
-                particle = min(swarm.particles, key=lambda x: x.fitness[-1])
-                
-                for j, (inertia, cognitive, social, v, x) in enumerate(zip(particle.inertia, particle.cognitive, particle.social, particle.v, particle.x)):
-                    fo.write("Generation {}:\n".format(j))
-                    fo.write("\tInertia: {}\n".format(pprint(inertia)))
-                    fo.write("\tCognitive: {}\n".format(pprint(cognitive)))
-                    fo.write("\tSocial: {}\n".format(pprint(social)))
-                    fo.write("\tVelocity: {}\n".format(pprint(v)))
-                    fo.write("\tPosition: {}\n".format(pprint(x)))
-                    fo.write("\n")
-                    
-                    
+        if num_var == 2:
             
+            particle = min(swarm.particles, key=lambda x: x.fitness[-1])
+            a = np.array([particle.inertia, particle.cognitive, particle.social, particle.v, particle.x])
+            a = a.transpose((1, 0, 2))
+            print(a.shape)
+            
+            log_file = "logs/plotting_vector_{:02d}_{}_{}_{}_{}.npy".format(num_var, function, topology, population_size, seed)
+            
+            np.save(log_file, a)
+                
+            
+            log_file = "logs/plotting_swarm_{:02d}_{}_{}_{}_{}.npy".format(num_var, function, topology, population_size, seed)
+            a = np.array([particle.x for particle in swarm.particles])
+            a = a.transpose((1, 0, 2))
+            print(a.shape)
+            np.save(log_file, a)
                 
 
 if __name__ == '__main__':
