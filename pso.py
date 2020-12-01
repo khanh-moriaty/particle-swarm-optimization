@@ -60,7 +60,6 @@ class PSO:
             log_file = "logs/plotting_vector_{:02d}_{}_{}_{}_{}.npy".format(num_var, function, topology, population_size, seed)
             
             np.save(log_file, a)
-                
             
             log_file = "logs/plotting_swarm_{:02d}_{}_{}_{}_{}.npy".format(num_var, function, topology, population_size, seed)
             a = np.array([particle.x for particle in swarm.particles])

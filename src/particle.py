@@ -5,13 +5,11 @@ class Particle:
     
     def __init__(self, particle_id, x, f, swarm, w=0.7298, c1=1.49618, c2=1.49618):
         self.id = particle_id
-        self.x = []
-        self.x.append(x)
+        self.x = [x]
         self.f = f
         self.swarm = swarm
         
-        self.v = []
-        self.v.append(np.zeros_like(x))
+        self.v = [np.zeros_like(x)]
         self.w = w
         self.c1 = c1
         self.c2 = c2
@@ -50,11 +48,16 @@ class Particle:
         
         # print(generation, inertia, cognitive, social, self.v[generation-1])
         
-        self.v.append(inertia + cognitive + social)
-        x = self.f.clip_particle(self.x[generation-1] + self.v[generation])
+        v = inertia + cognitive + social
+        
+        self.v.append(v)
+        assert len(self.v)-1 == generation
+        x = self.f.clip_particle(self.x[generation-1] + v)
         self.x.append(x)
         
         self.update_fitness(generation)
+        
+        assert len(self.inertia) == len(self.cognitive) == len(self.social) == len(self.v) == len(self.x) == len(self.best) == len(self.best_fitness)
         # print(self.v[generation], self.x[generation], self.best[generation])
         
         
