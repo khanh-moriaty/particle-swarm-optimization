@@ -28,7 +28,7 @@ def plot():
     PLOT_DIR = "plots"
     os.makedirs(PLOT_DIR, exist_ok=True)
     with Pool(8) as pool:
-        pool.starmap(process_swarm, zip(dir, repeat(LOG_DIR), repeat(PLOT_DIR)))
+        pool.starmap(process, zip(dir, repeat(LOG_DIR), repeat(PLOT_DIR)))
     
     for fi in dir[::2]:
         process(fi, LOG_DIR, PLOT_DIR)
