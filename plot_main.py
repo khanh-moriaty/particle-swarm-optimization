@@ -30,8 +30,8 @@ def plot():
     with Pool(8) as pool:
         pool.starmap(process, zip(dir, repeat(LOG_DIR), repeat(PLOT_DIR)))
     
-    for fi in dir[::2]:
-        process(fi, LOG_DIR, PLOT_DIR)
+    # for fi in dir:
+    #     process(fi, LOG_DIR, PLOT_DIR)
         
 if __name__ == '__main__':
     plot()

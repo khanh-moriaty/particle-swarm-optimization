@@ -1,0 +1,9 @@
+Log file for rosenbrock problem with 10 variable
+Topology used: ring
+Population size: 128
+
+Random seed: 19520629
+Solution: -0.993252 0.996587 0.998215 0.998937 0.999132 0.998898 0.998109 0.996365 0.992802 0.985655
+Best fitness value: 3.986582
+Optimal fitness value: 0.000000
+Absolute different: 3.986582

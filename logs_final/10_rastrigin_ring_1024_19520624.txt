@@ -1,0 +1,9 @@
+Log file for rastrigin problem with 10 variable
+Topology used: ring
+Population size: 1024
+
+Random seed: 19520624
+Solution: -0.994959 1.989912 0.000000 -0.000000 -0.000000 -0.000000 -0.994959 -0.000000 -0.000000 0.000000
+Best fitness value: 5.969749
+Optimal fitness value: 0.000000
+Absolute different: 5.969749

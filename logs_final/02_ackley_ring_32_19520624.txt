@@ -1,0 +1,373 @@
+Log file for ackley problem with 2 variable
+Topology used: ring
+Population size: 32
+
+Random seed: 19520624
+Solution: 0.000056 -0.000863
+Best fitness value: 0.002467
+Optimal fitness value: 0.000000
+Absolute different: 0.002467
+
+
+****************************************
+JOURNEY OF THE BEST PARTICLE
+****************************************
+
+
+Generation 0:
+	Inertia: 0.000000 0.000000
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: 0.000000 0.000000
+	Position: 4.782940 -0.986849
+
+Generation 1:
+	Inertia: 0.000000 0.000000
+	Cognitive: 0.000000 0.000000
+	Social: -1.271026 2.161287
+	Velocity: -1.271026 2.161287
+	Position: 3.511914 1.174437
+
+Generation 2:
+	Inertia: -0.927595 1.577307
+	Cognitive: 0.000000 0.000000
+	Social: -1.604469 -0.121912
+	Velocity: -2.532064 1.455395
+	Position: 0.979849 2.629832
+
+Generation 3:
+	Inertia: -1.847901 1.062147
+	Cognitive: 0.000000 0.000000
+	Social: -3.562275 -1.176524
+	Velocity: -5.410175 -0.114377
+	Position: -4.430326 2.515455
+
+Generation 4:
+	Inertia: -3.948346 -0.083472
+	Cognitive: 5.461242 0.017817
+	Social: 3.096842 -0.434853
+	Velocity: 4.609739 -0.500508
+	Position: 0.179413 2.014948
+
+Generation 5:
+	Inertia: 3.364187 -0.365270
+	Cognitive: 0.000000 0.000000
+	Social: -1.494866 -2.379982
+	Velocity: 1.869321 -2.745253
+	Position: 2.048733 -0.730305
+
+Generation 6:
+	Inertia: 1.364230 -2.003485
+	Cognitive: -2.189037 1.435622
+	Social: -2.137139 -0.505402
+	Velocity: -2.961945 -1.073264
+	Position: -0.913212 -1.803569
+
+Generation 7:
+	Inertia: -2.161628 -0.783268
+	Cognitive: 1.820308 0.318128
+	Social: 0.296989 1.882861
+	Velocity: -0.044331 1.417721
+	Position: -0.957542 -0.385848
+
+Generation 8:
+	Inertia: -0.032352 1.034653
+	Cognitive: 0.000000 0.000000
+	Social: 1.150446 0.125422
+	Velocity: 1.118094 1.160075
+	Position: 0.160552 0.774226
+
+Generation 9:
+	Inertia: 0.815985 0.846622
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: 0.815985 0.846622
+	Position: 0.976536 1.620849
+
+Generation 10:
+	Inertia: 0.595506 0.617865
+	Cognitive: -0.142136 -0.388831
+	Social: -0.792308 -0.301735
+	Velocity: -0.338938 -0.072700
+	Position: 0.637598 1.548148
+
+Generation 11:
+	Inertia: -0.247357 -0.053057
+	Cognitive: 0.453506 0.011209
+	Social: -0.174635 -0.429064
+	Velocity: 0.031513 -0.470912
+	Position: 0.669111 1.077236
+
+Generation 12:
+	Inertia: 0.022998 -0.343672
+	Cognitive: 0.000000 0.000000
+	Social: -0.371203 -0.299685
+	Velocity: -0.348205 -0.643357
+	Position: 0.320906 0.433879
+
+Generation 13:
+	Inertia: -0.254120 -0.469522
+	Cognitive: 0.000000 0.000000
+	Social: -0.052801 -0.218502
+	Velocity: -0.306921 -0.688024
+	Position: 0.013985 -0.254145
+
+Generation 14:
+	Inertia: -0.223991 -0.502120
+	Cognitive: 0.000000 0.000000
+	Social: -0.066212 0.032603
+	Velocity: -0.290203 -0.469517
+	Position: -0.276218 -0.723662
+
+Generation 15:
+	Inertia: -0.211790 -0.342653
+	Cognitive: 0.238237 0.663059
+	Social: 0.132026 0.288602
+	Velocity: 0.158473 0.609008
+	Position: -0.117745 -0.114655
+
+Generation 16:
+	Inertia: 0.115654 0.444454
+	Cognitive: 0.000000 0.000000
+	Social: 0.026910 0.068240
+	Velocity: 0.142564 0.512694
+	Position: 0.024819 0.398039
+
+Generation 17:
+	Inertia: 0.104043 0.374164
+	Cognitive: -0.035325 -0.668073
+	Social: -0.019851 -0.199412
+	Velocity: 0.048867 -0.493322
+	Position: 0.073686 -0.095282
+
+Generation 18:
+	Inertia: 0.035663 -0.360026
+	Cognitive: 0.000000 0.000000
+	Social: -0.026883 0.116417
+	Velocity: 0.008779 -0.243609
+	Position: 0.082465 -0.338892
+
+Generation 19:
+	Inertia: 0.006407 -0.177786
+	Cognitive: -0.012358 0.165018
+	Social: -0.057789 0.228325
+	Velocity: -0.063739 0.215557
+	Position: 0.018725 -0.123335
+
+Generation 20:
+	Inertia: -0.046517 0.157313
+	Cognitive: 0.073019 -0.027344
+	Social: -0.020377 0.176599
+	Velocity: 0.006125 0.306569
+	Position: 0.024851 0.183234
+
+Generation 21:
+	Inertia: 0.004470 0.223734
+	Cognitive: 0.000000 0.000000
+	Social: 0.053280 -0.127915
+	Velocity: 0.057750 0.095819
+	Position: 0.082601 0.279053
+
+Generation 22:
+	Inertia: 0.042146 0.069929
+	Cognitive: -0.051641 -0.091854
+	Social: -0.083898 -0.187939
+	Velocity: -0.093392 -0.209863
+	Position: -0.010791 0.069190
+
+Generation 23:
+	Inertia: -0.068158 -0.153158
+	Cognitive: 0.000000 0.000000
+	Social: -0.010692 -0.036258
+	Velocity: -0.078850 -0.189416
+	Position: -0.089641 -0.120226
+
+Generation 24:
+	Inertia: -0.057545 -0.138236
+	Cognitive: 0.010297 0.279884
+	Social: 0.055192 0.086762
+	Velocity: 0.007945 0.228410
+	Position: -0.081696 0.108183
+
+Generation 25:
+	Inertia: 0.005798 0.166693
+	Cognitive: -0.006662 -0.117206
+	Social: 0.110886 -0.140420
+	Velocity: 0.110022 -0.090933
+	Position: 0.028325 0.017250
+
+Generation 26:
+	Inertia: 0.080294 -0.066363
+	Cognitive: 0.000000 0.000000
+	Social: -0.013034 0.005758
+	Velocity: 0.067259 -0.060605
+	Position: 0.095585 -0.043354
+
+Generation 27:
+	Inertia: 0.049086 -0.044229
+	Cognitive: -0.038644 0.000450
+	Social: -0.104469 0.071444
+	Velocity: -0.094027 0.027665
+	Position: 0.001558 -0.015689
+
+Generation 28:
+	Inertia: -0.068621 0.020190
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: -0.068621 0.020190
+	Position: -0.067063 0.004501
+
+Generation 29:
+	Inertia: -0.050079 0.014735
+	Cognitive: 0.056400 -0.026837
+	Social: 0.080219 -0.023574
+	Velocity: 0.086539 -0.035676
+	Position: 0.019477 -0.031175
+
+Generation 30:
+	Inertia: 0.063156 -0.026037
+	Cognitive: -0.023053 0.042964
+	Social: -0.008632 0.021596
+	Velocity: 0.031472 0.038523
+	Position: 0.050949 0.007348
+
+Generation 31:
+	Inertia: 0.022968 0.028114
+	Cognitive: 0.000000 0.000000
+	Social: -0.029897 -0.011083
+	Velocity: -0.006929 0.017031
+	Position: 0.044020 0.024379
+
+Generation 32:
+	Inertia: -0.005057 0.012429
+	Cognitive: 0.000000 0.000000
+	Social: -0.082616 -0.000847
+	Velocity: -0.087673 0.011582
+	Position: -0.043653 0.035962
+
+Generation 33:
+	Inertia: -0.063984 0.008453
+	Cognitive: 0.088839 -0.015281
+	Social: 0.000531 -0.019274
+	Velocity: 0.025386 -0.026103
+	Position: -0.018267 0.009859
+
+Generation 34:
+	Inertia: 0.018527 -0.019050
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: 0.018527 -0.019050
+	Position: 0.000260 -0.009191
+
+Generation 35:
+	Inertia: 0.013521 -0.013902
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: 0.013521 -0.013902
+	Position: 0.013781 -0.023093
+
+Generation 36:
+	Inertia: 0.009868 -0.010146
+	Cognitive: -0.002569 0.008904
+	Social: -0.022437 0.000746
+	Velocity: -0.015139 -0.000496
+	Position: -0.001358 -0.023590
+
+Generation 37:
+	Inertia: -0.011048 -0.000362
+	Cognitive: 0.019121 0.000472
+	Social: -0.002899 0.016896
+	Velocity: 0.005174 0.017006
+	Position: 0.003817 -0.006583
+
+Generation 38:
+	Inertia: 0.003776 0.012411
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: 0.003776 0.012411
+	Position: 0.007593 0.005828
+
+Generation 39:
+	Inertia: 0.002756 0.009058
+	Cognitive: -0.005541 -0.005378
+	Social: -0.002969 -0.008757
+	Velocity: -0.005754 -0.005077
+	Position: 0.001839 0.000751
+
+Generation 40:
+	Inertia: -0.004199 -0.003705
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: -0.004199 -0.003705
+	Position: -0.002360 -0.002954
+
+Generation 41:
+	Inertia: -0.003065 -0.002704
+	Cognitive: 0.002186 0.001315
+	Social: 0.003661 0.001816
+	Velocity: 0.002782 0.000427
+	Position: 0.000422 -0.002527
+
+Generation 42:
+	Inertia: 0.002030 0.000312
+	Cognitive: -0.001703 -0.000265
+	Social: -0.002416 -0.000337
+	Velocity: -0.002089 -0.000290
+	Position: -0.001667 -0.002818
+
+Generation 43:
+	Inertia: -0.001524 -0.000212
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: -0.001524 -0.000212
+	Position: -0.003192 -0.003030
+
+Generation 44:
+	Inertia: -0.001113 -0.000155
+	Cognitive: 0.000027 0.000094
+	Social: 0.000680 0.003158
+	Velocity: -0.000406 0.003097
+	Position: -0.003597 0.000068
+
+Generation 45:
+	Inertia: -0.000296 0.002260
+	Cognitive: 0.000116 -0.002742
+	Social: 0.000728 0.000366
+	Velocity: 0.000548 -0.000116
+	Position: -0.003049 -0.000048
+
+Generation 46:
+	Inertia: 0.000400 -0.000084
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: 0.000400 -0.000084
+	Position: -0.002649 -0.000132
+
+Generation 47:
+	Inertia: 0.000292 -0.000062
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: 0.000292 -0.000062
+	Position: -0.002357 -0.000194
+
+Generation 48:
+	Inertia: 0.000213 -0.000045
+	Cognitive: 0.000000 0.000000
+	Social: 0.000000 0.000000
+	Velocity: 0.000213 -0.000045
+	Position: -0.002144 -0.000239
+
+Generation 49:
+	Inertia: 0.000156 -0.000033
+	Cognitive: 0.000000 0.000000
+	Social: 0.000097 -0.000407
+	Velocity: 0.000252 -0.000440
+	Position: -0.001892 -0.000679
+
+Generation 50:
+	Inertia: 0.000184 -0.000321
+	Cognitive: 0.000000 0.000000
+	Social: 0.001763 0.000137
+	Velocity: 0.001947 -0.000184
+	Position: 0.000056 -0.000863
+

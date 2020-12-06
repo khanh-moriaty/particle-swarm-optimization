@@ -45,8 +45,8 @@ def plot_swarm(a, out_file, func_name):
     ax_swarm.set_ylim(lo[1], hi[1])
     ax_swarm.set_xlabel('Swarm Population', size='xx-large')
     ax_dist = fig.add_subplot(122, aspect='equal')
-    ax_dist.set_xlim(-2*(hi-lo)[0], +2*(hi-lo)[0])
-    ax_dist.set_ylim(-2*(hi-lo)[1], +2*(hi-lo)[1])
+    ax_dist.set_xlim(-1.41*(hi-lo)[0], +1.41*(hi-lo)[0])
+    ax_dist.set_ylim(-1.41*(hi-lo)[1], +1.41*(hi-lo)[1])
     ax_dist.set_xlabel('Distance between particles', size='xx-large')
     
     
@@ -61,7 +61,7 @@ def plot_swarm(a, out_file, func_name):
     scatter_dist = ax_dist.scatter([], [], c='blue', s=20)
     
     def update(i):
-        i = np.clip(i, 0, 50)
+        i = np.clip(i, 0, len(a)-1)
         distances = np.array([x[1] - x[0] for x in combinations(a[i], 2)])
         label = "{} Function\nGeneration {:02d}".format(func_name.capitalize(), i)
         fig.suptitle(label, size='xx-large')
@@ -70,7 +70,7 @@ def plot_swarm(a, out_file, func_name):
         scatter_dist.set_offsets(distances)
         return fig, scatter_swarm, scatter_dist
     
-    anim = FuncAnimation(fig, update, frames=np.arange(1, 60), interval=150)
+    anim = FuncAnimation(fig, update, frames=np.arange(1, len(a)+10), interval=150)
     anim.save(out_file, dpi=100, writer='imagemagick')
 
 def plot_vector(a, out_file, func_name):
@@ -124,7 +124,7 @@ def plot_vector(a, out_file, func_name):
     
     def update(i, arrows):
         # print(i)
-        i = np.clip(i, 0, 101)
+        i = np.clip(i, 0, 2*len(a)-1)
         odd = i % 2
         i = i // 2
         label = "{} Function\nAdventure of The Best Particle\nGeneration {:02d}".format(func_name.capitalize(), i)
@@ -140,6 +140,6 @@ def plot_vector(a, out_file, func_name):
         arrows.append([ax.arrow(*a[i, 4, :], *vector, color=color, width=domain_size/100, head_width=domain_size/30, head_length=domain_size/20) for vector, color in zip(arrow_list, colors)])
         return fig, scatter, (*arrows[-1]), (*arrows[-2])
     
-    anim = FuncAnimation(fig, partial(update, arrows=arrows), frames=np.arange(1, 105), interval=500)
+    anim = FuncAnimation(fig, partial(update, arrows=arrows), frames=np.arange(1, 2*len(a)), interval=500)
     anim.save(out_file, dpi=100, writer='imagemagick')
     

@@ -1,9 +1,9 @@
-
 from .sphere_function import SphereFunction
 from .rastrigin_function import RastriginFunction
 from .rosenbrock_function import RosenbrockFunction
 from .ackley_function import AckleyFunction
 from .eggholder_function import EggHolderFunction
+from .easom_function import EasomFunction
 
 class FunctionFactory:
     
@@ -21,6 +21,7 @@ class FunctionFactory:
         'rosenbrock': RosenbrockFunction,
         'ackley': AckleyFunction,
         'eggholder': EggHolderFunction,
+        'easom': EasomFunction,
     }
     
     def getFunction(self, func_name, num_var):

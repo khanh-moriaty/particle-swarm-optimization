@@ -1,0 +1,9 @@
+Log file for rosenbrock problem with 10 variable
+Topology used: star
+Population size: 256
+
+Random seed: 19520630
+Solution: 0.988401 0.976880 0.954147 0.910079 0.827575 0.683437 0.463717 0.205613 0.000051 -512.000000
+Best fitness value: 26214402.248191
+Optimal fitness value: 0.000000
+Absolute different: 26214402.248191

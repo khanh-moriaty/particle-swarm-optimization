@@ -16,11 +16,11 @@ class RosenbrockFunction(Function):
     
     @property
     def _lower_bound(self):
-        return -(32)
+        return -(512)
     
     @property
     def _upper_bound(self):
-        return +(32)
+        return +(512)
     
     @property
     def _optimal(self):

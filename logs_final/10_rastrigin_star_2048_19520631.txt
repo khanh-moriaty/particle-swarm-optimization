@@ -1,0 +1,9 @@
+Log file for rastrigin problem with 10 variable
+Topology used: star
+Population size: 2048
+
+Random seed: 19520631
+Solution: 0.000000 1.989912 0.000000 0.000000 -0.000000 -0.994959 -0.994959 1.989912 -0.000000 -0.000000
+Best fitness value: 9.949580
+Optimal fitness value: 0.000000
+Absolute different: 9.949580
